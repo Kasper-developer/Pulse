@@ -1,0 +1,16 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 42" width="45" height="42">
+	<title>первый экран</title>
+	<defs>
+		<image  width="45" height="42" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAqCAMAAAAQwSIQAAAAAXNSR0IB2cksfwAAAiJQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////z4aI3QAAALZ0Uk5TAAMBBAIFCAZUz9bYxsHAwr++yNTZ3N3b19LOzNPadXb/48XN0NWqd1EKCw8NECapeEQi/i6jVS2iWf15Fk8OHBkgKCMXExQYHhoHab2sr7CoqzMyMCQ1JRVOSmumpKW4XkY5XFJITKFFWpB/gH6HiImFgYtB/E2De4I+p2qZIUvr6RHDG1Dqxx/sQ+fEuR1Y0d+3Sd7m4OXkevC7DD8pPegr9O86yp7thrPy8V9iErxslglwrbKG2BJcAAADF0lEQVR4nJWU+UMSQRSAZ2cRJBGvNFZUnqCQeBapCEqoeJGmZqZ5ZiVl0mWnnXik4prZYWXSpZndd/9fe4kLAtX3y+zMfPtm5u2bRYjACCFMkqQEbYCjpFIZFjoShP0TKFq+LUauiI1VxsUnxMcnJm1nSU5J2aGiUtXytHSVPGMzDNJAplarUFNytS6VQ6fLoqgsndBLzAY9sWkbYCfKMebmkQIEkZObnycjOEgSF0ChyC6CXSgSu02Fon1rmNjhkaA9pmJRXwMlEWyMSk1mUb8IyiLvxCK2rRAtXhmLTfZ45UF2Bdfa9trtlVVV1Y6a2tqaWofdXlff4GTGay2BO+HtfY36pv3NzfoWPU9ha0IG3mIbBNtRVXqg7WBBdTtPdVXboQ72I3YG2YcjnrI8yO7i2u7Gptae3j6e3j59U1P/EW5NwcaCPcAd/+ix44MDgzwDruiSaJernZ2os5wIiH2SfTNPVGgBNFjMBBFsE0Onht08p91nzp47Pzxy4SJnXyqM2hKbuHzFwKO5OuJ2WzWGotFrnG26jm70movNN10iO1xObkEPMgOLkrNvB83jgK9fYOpBpM1mq/doEVuDFeHCcnQINegc0zJZNARU1VaqhXyPj00wVWaNWN8ITfptBXM3rHDn3+ypaWYn1r/UyYxgO7wKxFbsrDCOQ9rjFv5eVnrZnFiBVqfKdXNlWMZcnK67sUqWeGXcnHZuYlqtVkELF2neO8G09xao7PuZU/AgR2pEDwEe0QyLtCf5Mf1kkXl8mrTELTw5xdqkUUY6pQ3Pln1O9BwyXxBGls66ipd53JPRJuN2UvNqzr87mXfZh16vQNvGGQi61T/J/E8lyDi2ac+vLiM7DW82+ljqXdt4lmApU4U+j8I/ObP61kfB0GYqcCrQnnUGzzr9DuW/T/8A/tiSejqhH7rFmetWJqVRFLWQvfARPpXDytryZ3+kchXAaMh8Y/TlKxTDN/FY7hR8DylLsAT90AH8FA86+3+FlHnsMbAUMOCLICNU/3s24vx/g1G4ShMbIeVQr4UNhSMvEoTwJ/sDI5WrQenASzUAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="первый экран">
+		<g id="иконки">
+			<g id="3">
+				<use id="messages-64" href="#img1" x="0" y="0" />
+			</g>
+		</g>
+	</g>
+</svg>
