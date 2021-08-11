@@ -82,4 +82,63 @@ document.addEventListener('DOMContentLoaded', () => {
 			hideContent(i);
 		})
 	})
+
+	// Модальные окна
+
+	const consTriggers = document.querySelectorAll('[data-modal="consultation"]'),
+		orderTriggers = document.querySelectorAll('.button--mini'),
+		overlay = document.querySelectorAll('.overlay'),
+		modal = document.querySelectorAll('.modal'),
+		modalCons = document.querySelector('#consultation'),
+		modalOrder = document.querySelector('#order'),
+		modalThanks = document.querySelector('#thanks'),
+		catalogSub = document.querySelectorAll('.catalog-item__subtitle'),
+		closeBtn = document.querySelectorAll('.modal__close');
+
+	function closeModal() {
+		closeBtn.forEach(btn => {
+			btn.addEventListener('click', (e) => {
+				modalCons.classList.remove('show', 'fade');
+				modalOrder.classList.remove('show', 'fade')
+				document.body.style.overflow = '';
+			})
+		})
+	}
+
+	consTriggers.forEach(trigger => {
+		trigger.addEventListener('click', (e) => {
+			modalCons.classList.add('show', 'fade');
+			document.body.style.overflow = 'hidden';
+			closeModal();
+		})
+	})
+
+	orderTriggers.forEach((trigger, i) => {
+		trigger.addEventListener('click', () => {
+			document.querySelector('#order .modal__subtitle').textContent = catalogSub[i].textContent
+			modalOrder.classList.add('show', 'fade');
+			document.body.style.overflow = 'hidden';
+			closeModal();
+		})
+	})
+
+/* 	overlay.forEach((item, i) => {
+		item.addEventListener('click', (e) => {
+			if (e.target === modalCons || modalOrder) {
+				console.log('Done Exit');
+				modalCons.classList.remove('show', 'fade');
+				modalOrder.classList.remove('show', 'fade');
+				document.body.style.overflow = '';
+			}
+		})
+	})
+
+	modal.forEach(item => {
+		item.addEventListener('click', (e) => {
+			if (e.target === modal) {
+				console.log('dsd');
+			}
+		})
+	}) */
+
 })

@@ -7,6 +7,7 @@
 @import "blocks/_catalog";
 @import "blocks/_reviews";
 @import "blocks/_footer";
+@import "blocks/_modal";
 @import "blocks/_media";
 
 body {
@@ -98,5 +99,22 @@ body {
 }
 
 .show {
-	display: block;
+	display: block !important;
+}
+
+.hidden {
+	overflow: hidden;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 0.6s;
+}
+@keyframes fade {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
 }
