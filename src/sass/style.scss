@@ -2,6 +2,10 @@
 @import "blocks/_promo";
 @import "blocks/_header";
 @import "blocks/_advantages";
+@import "blocks/_consultation";
+@import "blocks/_carousel";
+@import "blocks/_catalog";
+@import "blocks/_reviews";
 @import "blocks/_media";
 
 body {
@@ -11,6 +15,7 @@ body {
 .container {
 	max-width: 950px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .button {
@@ -31,6 +36,18 @@ body {
 		height: 51px;
 		font-size: 16px;
 	}
+	&--mini {
+		width: 132px;
+		height: 41px;
+		font-size: 14px;
+	}
+}
+
+.input {
+	width: 301px;
+	height: 51px;
+	padding: 21px;
+	border-radius: 5px;
 }
 
 .title {
@@ -52,18 +69,33 @@ body {
 		max-width: 550px;
 	}
 	.button {
-		&--main {
-			width: 270px;
+		&--mini {
+			width: 105px;
+			height: 35px;
 		}
 	}
-} ;
+}
 @media screen and (max-width: 576px) {
 	.container {
-		max-width: 90%
+		max-width: 90%;
+	}
+	.title {
+		font-size: 28px;
 	}
 	.button {
 		&--main {
-			width: 270px;
+			width: 290px;
 		}
 	}
-} ;
+	.input {
+		width: 290px;
+	}
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
