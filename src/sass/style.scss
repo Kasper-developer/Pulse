@@ -94,6 +94,17 @@ body {
 	}
 }
 
+.error {
+	margin-bottom: 10px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: 700;
+}
+
+input.error {
+	border: 1px solid $main-color;
+}
+
 .hide {
 	display: none;
 }

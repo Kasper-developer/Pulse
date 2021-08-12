@@ -122,23 +122,56 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	})
 
-/* 	overlay.forEach((item, i) => {
-		item.addEventListener('click', (e) => {
-			if (e.target === modalCons || modalOrder) {
-				console.log('Done Exit');
-				modalCons.classList.remove('show', 'fade');
-				modalOrder.classList.remove('show', 'fade');
-				document.body.style.overflow = '';
-			}
+	/* 	overlay.forEach((item, i) => {
+			item.addEventListener('click', (e) => {
+				if (e.target === modalCons || modalOrder) {
+					console.log('Done Exit');
+					modalCons.classList.remove('show', 'fade');
+					modalOrder.classList.remove('show', 'fade');
+					document.body.style.overflow = '';
+				}
+			})
 		})
-	})
+	
+		modal.forEach(item => {
+			item.addEventListener('click', (e) => {
+				if (e.target === modal) {
+					console.log('dsd');
+				}
+			})
+		}) */
 
-	modal.forEach(item => {
-		item.addEventListener('click', (e) => {
-			if (e.target === modal) {
-				console.log('dsd');
+
+	// JQUERY VALIDATE FORM 
+
+	function validateForm(form) {
+		$(form).validate({
+			rules: {
+				name: {
+					required: true,
+					minlength: 2
+				},
+				phone: 'required',
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: {
+					required: "Пожалуйта введите свое имя",
+					minlength: jQuery.validator.format('Введите минимум {0} символов')
+				},
+				phone: 'Пожалуйста введите свой номер телефона',
+				email: {
+					required: "Пожалуйста введите свою почту",
+					email: "Неправильно введен адрес почты"
+				}
 			}
-		})
-	}) */
+		});
+	}
 
+	validateForm('#consultation__form');
+	validateForm('#consultation form');
+	validateForm('#order form');
 })
