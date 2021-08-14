@@ -99,7 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		closeBtn.forEach(btn => {
 			btn.addEventListener('click', (e) => {
 				modalCons.classList.remove('show', 'fade');
-				modalOrder.classList.remove('show', 'fade')
+				modalOrder.classList.remove('show', 'fade');
+				modalThanks.classList.remove('show', 'fade');
 				document.body.style.overflow = '';
 			})
 		})
@@ -176,4 +177,26 @@ document.addEventListener('DOMContentLoaded', () => {
 	validateForm('#order form');
 
 	$('input[name=phone]').mask('+7 (999) 999-99-99');
+
+	// PHP MAILER
+
+	$('form').submit(function (e) {
+		let $form = $(this);
+		if (!$form.valid()) return false;
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function () {
+			$(this).find('input').val('');
+			modalCons.classList.remove('show', 'fade')
+			modalOrder.classList.remove('show', 'fade')
+			modalThanks.classList.add('show', 'fade');
+			closeModal();
+			$('form').trigger('reset');
+		});
+		return false
+	})
+
 })
