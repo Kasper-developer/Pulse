@@ -92,6 +92,10 @@ body {
 	.input {
 		width: 290px;
 	}
+	.pageup {
+		bottom: 30px !important;
+		right: 20px !important;
+	}
 }
 
 .error {
@@ -104,6 +108,18 @@ body {
 input.error {
 	text-align: left;
 	border: 1px solid $main-color;
+}
+
+.pageup {
+	display: none;
+	position: fixed;
+	bottom: 60px;
+	right: 60px;
+	width: 40px;
+	height: 40px;
+	img {
+		width: 100%;
+	}
 }
 
 .hide {

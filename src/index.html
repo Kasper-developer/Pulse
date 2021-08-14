@@ -8,51 +8,52 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Pulse</title>
 </head>
 
 <body>
-	<section class="promo">
+	<section class="promo" id="up">
 		<div class="container">
 			<header class="header">
-				<a href="#" class="header__logo">
+				<a href="#" class="header__logo" data-aos="fade-down" data-aos-delay="100">
 					<img src="icons/logo.png" alt="logo">
 				</a>
-				<div class="header__official">
+				<div class="header__official" data-aos="fade-down" data-aos-delay="150">
 					Официальный представитель
 					<span>Garmin, Polar, Suunto</span>
 				</div>
 				<div class="header__contacts">
-					<a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-					<button class="button header__button" data-modal="consultation">заказать звонок</button>
+					<a href="tel:+74999228974" class="header__phone" data-aos="fade-down" data-aos-delay="200">+7 (499) 922-89-74</a>
+					<button class="button header__button" data-modal="consultation" data-aos="fade-down" data-aos-delay="250">заказать звонок</button>
 				</div>
 			</header>
 			<div class="promo__wrapper">
-				<h1 class="promo__title">Подбор пульсометра</h1>
-				<h2 class="promo__subtitle">C учётом Вашего уровня подготовки</h2>
+				<h1 class="promo__title" data-aos="fade-left" data-aos-delay="100">Подбор пульсометра</h1>
+				<h2 class="promo__subtitle" data-aos="fade-left" data-aos-delay="200">C учётом Вашего уровня подготовки</h2>
 
 				<div class="promo__icons">
-					<div class="promo__icon">
+					<div class="promo__icon" data-aos="fade-left" data-aos-delay="100">
 						<img src="icons/main-screen/timer.png" alt="timer">
 						Время подбора:
 						10 минут
 					</div>
-					<div class="promo__icon">
+					<div class="promo__icon" data-aos="fade-left" data-aos-delay="200">
 						<img src="icons/main-screen/hand-cart.png" alt="hand-cart">
 						Бесплатная
 						доставка
 					</div>
-					<div class="promo__icon">
+					<div class="promo__icon" data-aos="fade-left" data-aos-delay="300">
 						<img src="icons/main-screen/messages.png" alt="messages">
 						Ответим
 						на все вопросы
 					</div>
 				</div>
-				<button class="button button--main" data-modal="consultation">Заказать консультацию</button>
-				<div class="promo__link">
+				<button class="button button--main" data-modal="consultation" data-aos="fade-left" data-aos-delay="100">Заказать консультацию</button>
+				<div class="promo__link" data-aos="fade-left" data-aos-delay="200">
 					или
-					<a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+					<a href="#catalog">ПЕРЕЙТИ В КАТАЛОГ</a>
 				</div>
 			</div>
 		</div>
@@ -60,22 +61,22 @@
 
 	<section class="advantages">
 		<div class="container">
-			<h2 class="title advantages__title">Наши преимущества</h2>
+			<h2 class="title advantages__title" data-aos="zoom-in" data-aos-delay="100">Наши преимущества</h2>
 			<div class="advantages__wrapper">
-				<div class="advantages-item">
+				<div class="advantages-item" data-aos="fade-left" data-aos-delay="100">
 					<img src="icons/advantages/cup.png" alt="cup" class="advantages-item__icon">
 					<h3 class="advantages-item__title">Делимся опытом</h3>
 					<p class="advantages-item__desc">Наши сотрудники всегда готовы поделиться своим опытом,
 						так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
 				</div>
-				<div class="advantages-item">
+				<div class="advantages-item" data-aos="fade-left" data-aos-delay="200">
 					<img src="icons/advantages/heart.png" alt="heart" class="advantages-item__icon">
 					<h3 class="advantages-item__title">Заботимся о здоровье</h3>
 					<p class="advantages-item__desc">Мы работаем для того,
 						чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
 					</p>
 				</div>
-				<div class="advantages-item">
+				<div class="advantages-item" data-aos="fade-left" data-aos-delay="300">
 					<img src="icons/advantages/shoe.png" alt="shoe" class="advantages-item__icon">
 					<h3 class="advantages-item__title">Учим бегать</h3>
 					<p class="advantages-item__desc">Помогаем с обучением
@@ -89,9 +90,9 @@
 
 	<section class="consultation">
 		<div class="container">
-			<h2 class="consultation__title">Получите бесплатную консультацию по подбору пульсометра </h2>
-			<p class="consultation__desc">Просто заполните форму заявки и мы&nbsp;перезвоним вам в течении 10 минут</p>
-			<form action="#" class="form consultation__form" id="consultation__form">
+			<h2 class="consultation__title" data-aos="zoom-in" data-aos-delay="100">Получите бесплатную консультацию по подбору пульсометра </h2>
+			<p class="consultation__desc" data-aos="zoom-in" data-aos-delay="200">Просто заполните форму заявки и мы&nbsp;перезвоним вам в течении 10 минут</p>
+			<form action="#" class="form consultation__form" id="consultation__form" data-aos="fade-left" data-aos-delay="100">
 				<input name="name" type="text" placeholder="Ваше имя" class="input consultation__input">
 				<input name="phone" placeholder="Ваш телефон" class="input consultation__input">
 				<input name="email" type="email" placeholder="Ваш E-mail" class="input consultation__input">
@@ -100,7 +101,7 @@
 		</div>
 	</section>
 
-	<section class="carousel">
+	<section class="carousel" data-aos="zoom-in" data-aos-delay="100">
 		<div class="container">
 			<div class="swiper-container carousel__swiper">
 				<!-- Additional required wrapper -->
@@ -126,10 +127,10 @@
 		</div>
 	</section>
 
-	<section class="catalog">
+	<section class="catalog" id="catalog">
 		<div class="container">
-			<h2 class="title">Каталог пульсометров</h2>
-			<ul class="catalog__tabs">
+			<h2 class="title" data-aos="zoom-in" data-aos-delay="100">Каталог пульсометров</h2>
+			<ul class="catalog__tabs" data-aos="zoom-in" data-aos-delay="200">
 				<li class="catalog__tab" data-tab="#tab_1">
 					<div>Для фитнеса</div>
 				</li>
@@ -142,7 +143,7 @@
 			</ul>
 
 			<div class="catalog__content" id="tab_1">
-				<div class="catalog-item">
+				<div class="catalog-item" data-aos="fade-up" data-aos-delay="100">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content--active">
 							<img src="img/catalog_image.png" alt="Image: pulsometr" class="catalog-item__img">
@@ -168,7 +169,7 @@
 						<button class="button button--mini">КУПИТЬ</button>
 					</div>
 				</div>
-				<div class="catalog-item">
+				<div class="catalog-item" data-aos="fade-up" data-aos-delay="200">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content--active">
 							<img src="img/catalog_image.png" alt="Image: pulsometr" class="catalog-item__img">
@@ -194,7 +195,7 @@
 						<button class="button button--mini">КУПИТЬ</button>
 					</div>
 				</div>
-				<div class="catalog-item catalog-item__mr">
+				<div class="catalog-item catalog-item__mr" data-aos="fade-up" data-aos-delay="300">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content--active">
 							<img src="img/catalog_image.png" alt="Image: pulsometr" class="catalog-item__img">
@@ -220,7 +221,7 @@
 						<button class="button button--mini">КУПИТЬ</button>
 					</div>
 				</div>
-				<div class="catalog-item">
+				<div class="catalog-item" data-aos="fade-up" data-aos-delay="400">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content--active">
 							<img src="img/catalog_image.png" alt="Image: pulsometr" class="catalog-item__img">
@@ -246,7 +247,7 @@
 						<button class="button button--mini">КУПИТЬ</button>
 					</div>
 				</div>
-				<div class="catalog-item">
+				<div class="catalog-item" data-aos="fade-up" data-aos-delay="500">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content--active">
 							<img src="img/catalog_image.png" alt="Image: pulsometr" class="catalog-item__img">
@@ -272,7 +273,7 @@
 						<button class="button button--mini">КУПИТЬ</button>
 					</div>
 				</div>
-				<div class="catalog-item catalog-item__mr">
+				<div class="catalog-item catalog-item__mr" data-aos="fade-up" data-aos-delay="600">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content--active">
 							<img src="img/catalog_image.png" alt="Image: pulsometr" class="catalog-item__img">
@@ -300,7 +301,7 @@
 				</div>
 			</div>
 			<div class="catalog__content" id="tab_2">
-				<div class="catalog-item">
+				<div class="catalog-item" data-aos="fade-up" data-aos-delay="100">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content--active">
 							<img src="img/catalog_image.png" alt="Image: pulsometr" class="catalog-item__img">
@@ -328,7 +329,7 @@
 				</div>
 			</div>
 			<div class="catalog__content" id="tab_3">
-				<div class="catalog-item">
+				<div class="catalog-item" data-aos="fade-up" data-aos-delay="100">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content--active">
 							<img src="img/catalog_image.png" alt="Image: pulsometr" class="catalog-item__img">
@@ -354,7 +355,7 @@
 						<button class="button button--mini">КУПИТЬ</button>
 					</div>
 				</div>
-				<div class="catalog-item">
+				<div class="catalog-item" data-aos="fade-up" data-aos-delay="200">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content--active">
 							<img src="img/catalog_image.png" alt="Image: pulsometr" class="catalog-item__img">
@@ -386,8 +387,8 @@
 
 	<section class="reviews">
 		<div class="container">
-			<h2 class="title">Отзывы клиентов</h2>
-			<div class="reviews__item">
+			<h2 class="title" data-aos="zoom-in" data-aos-delay="100">Отзывы клиентов</h2>
+			<div class="reviews__item" data-aos="fade-up" data-aos-delay="100">
 				<div class="reviews__wrapper">
 					<div class="reviews-img reviews-img reviews-img--first">
 						<!-- <img src="img/reviews/reviews_image_1.png" alt="Image: people"> -->
@@ -403,7 +404,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="reviews__item">
+			<div class="reviews__item" data-aos="fade-up" data-aos-delay="200">
 				<div class="reviews__wrapper">
 					<div class="reviews-img reviews-img--second">
 						<!-- <img src="img/reviews/reviews_image_2.png" alt="Image: people"> -->
@@ -419,22 +420,22 @@
 						<p class="reviews-content__text">С ними подготовился к своему первому полумарафону! Спасибо!!!</p </div>
 					</div>
 				</div>
-				<div class="reviews__item">
-					<div class="reviews__wrapper">
-						<div class="reviews-img reviews-img--third">
-							<!-- <img src="img/reviews/reviews_image_3.png" alt="Image: people"> -->
-						</div>
-						<div class="reviews-content">
-							<h3 class="reviews-content__title">Юлия Дашкина</h3>
-							<span class="reviews-content__subtitle">2 полумарафона</span>
-							<p class="reviews-content__text">Долго не могла начать бегать, т.к. до этого несколько раз начинала,
-								но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и
-								решила попробовать.</p>
-							<p class="reviews-content__text">Позвонила, ребята поинтересовались моими целями и подобрали очень
-								интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и
-								несколько более коротких забегов и не намерена останавливаться!</p>
-							<p class="reviews-content__text">Спасибо!!!</p>
-						</div>
+			</div>
+			<div class="reviews__item" data-aos="fade-up" data-aos-delay="300">
+				<div class="reviews__wrapper">
+					<div class="reviews-img reviews-img--third">
+						<!-- <img src="img/reviews/reviews_image_3.png" alt="Image: people"> -->
+					</div>
+					<div class="reviews-content">
+						<h3 class="reviews-content__title">Юлия Дашкина</h3>
+						<span class="reviews-content__subtitle">2 полумарафона</span>
+						<p class="reviews-content__text">Долго не могла начать бегать, т.к. до этого несколько раз начинала,
+							но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и
+							решила попробовать.</p>
+						<p class="reviews-content__text">Позвонила, ребята поинтересовались моими целями и подобрали очень
+							интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и
+							несколько более коротких забегов и не намерена останавливаться!</p>
+						<p class="reviews-content__text">Спасибо!!!</p>
 					</div>
 				</div>
 			</div>
@@ -445,16 +446,16 @@
 			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d925.6485897219509!2d37.64692753663031!3d55.769344714313696!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQvMywg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNzA3OA!5e0!3m2!1sru!2s!4v1628711007999!5m2!1sru!2s"
 			width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		<div class="footer-content">
-			<span class="footer-content__address">Москва, Мясницкий проезд, д.3с1</span>
-			<a href="tel:84999228974" class="footer-content__phone">8 (499) 922-89-74</a>
+			<span class="footer-content__address" data-aos="fade-up" data-aos-delay="100">Москва, Мясницкий проезд, д.3с1</span>
+			<a href="tel:84999228974" class="footer-content__phone" data-aos="fade-up" data-aos-delay="200">8 (499) 922-89-74</a>
 			<div class="footer-content__links">
-				<a href="#" class="footer-content__link">
+				<a href="#" class="footer-content__link" data-aos="fade-up" data-aos-delay="100">
 					<span class="icon-facebook"></span>
 				</a>
-				<a href="#" class="footer-content__link">
+				<a href="#" class="footer-content__link" data-aos="fade-up" data-aos-delay="200">
 					<span class="icon-instagram"></span>
 				</a>
-				<a href="#" class="footer-content__link">
+				<a href="#" class="footer-content__link" data-aos="fade-up" data-aos-delay="300">
 					<span class="icon-pinterest"></span>
 				</a>
 			</div>
@@ -494,10 +495,15 @@
 			<div class="modal__subtitle">Наш менеджер свяжется с вами в ближайшее время!</div>
 		</div>
 	</div>
+
+	<a href="#up" class="pageup">
+		<img src="icons/up.svg" alt="Icon: Up">
+	</a>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.mask.min.js"></script>
+	<script src="js/aos.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
