@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21" width="21" height="21">
+	<title>окна</title>
+	<defs>
+		<image width="128" height="128" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAA0BJREFUeJzt201qG0EQhuGKvY3wFW2wT5GFF7lZwGDInewslML2WKPpv+qq7n4fmO3Q6HvRQqJFAAAAAAAAAKDUk4icvA8xkTsRefQ+RKrfIvIuIi9CBC3cicirnD/TZ+ezHNLx9SGCOp/H1ydsBNvxiaDOpfHDRrA3PhGUuTZ+uAiOxieCPCnjh4kgdXwiSJMzvnsEueMTwXUl47tFUDo+EVxWM373CGrHJ4KvWozfLYJW4xPBWcvxzSN4anzQ1SOwGF+fB4sDn+Q8FhHUsxz/j4j8tDo4EdQbdnxFBOWGH18RQb5pxldEkG668RURHJt2fEUE+6YfXxHBd8uMr4jgw3LjKyJYeHy1cgTLj69WjIDxN1aKgPF3rBAB4x+YOQLGTzRjBIyfaaYIGL/QDBEwfqWRI2D8RkaMgPEbGykCxjcyQgSMbyxyBIzfScQIGL+zSBEwvpMIETC+M88IGD8IjwgYP5ieETB+UD0iYPzgLCN4FZG/Ru9m/IYsI2D8QYwSAeMbih4B43cQNQLG7yhaBIzvIEoEjO/IOwLGD8ArAsYPpHcEjB9QrwgYP7CT2P2u/y7nwKYa/8b7AI3diMit4ftvReSH4ftRwfJfve23QIRbyfik1/hEEFDv8YkgEK/xiSAA7/GJwFGU8YnAQbTxiaCjqOMTQQfRxycCQ6OMTwQGLMd/MX43EVTqcWkjwoVUXNDzxg4RBONxXYsIgvC8q0cEziJc1CQCJxHGV0TQWaTxFRF0EnF8RQTGIo+viMDICOMrImhspPEVETQy4viKCCqNPL4igkIzjK+IINNM4ysiSDTj+IoIDsw8viKCHSuMr4hgY6XxFRH8t+L4avkIVh5fLRsB439YLgLG/26ZCBh/3/QRMP6xaSNg/HTTRcD4+aaJgPHLDR8B49cbNgLGb2fICB6NDrza+MoqgjcRubc69HPjw646vmodwZuI/LI+dKsIVh9ftYqgy/iqNgLG/6o2gq7jq9IIGP+y0ghcxle5ETD+dbkRuI6vUiNg/DSpEYQYXx1FwPh5jiIINb7ai4Dxy+xFEHJ8tY2A8etsIwg9vtIIGL8NjWCI8dWDMH5LJzH8eRcAAAAAAADA7P4BwyLVcZXxWuQAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="окна">
+		<g id="заказ">
+			<use id="close_btn" href="#img1" transform="matrix(0.195,0,0,0.195,-2,-2)"/>
+		</g>
+	</g>
+</svg>
