@@ -12,11 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			slideShadows: false,
 			depth: 150,
 		},
-		breakpoints: {
-			992: {
-				slidesPerView: 1,
-			},
-		},
 
 		// Navigation arrows
 		navigation: {
@@ -27,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 	// ТАБЫ
-
 
 	const tabsBtn = document.querySelectorAll('.catalog__tab'); // Получаем tab кнопки
 	const tabsItems = document.querySelectorAll('.catalog__content')	// Получаем контенты
@@ -56,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.querySelector('.catalog__tab').click(); // Авто клик по первой кнопке
 	})
 
-	// Открытие и закрытие окон
+	// Открытие и закрытие окон на контентах
 
 	const moreBtn = document.querySelectorAll('.catalog-item__more');
 	const backBtn = document.querySelectorAll('.catalog-item__back');
