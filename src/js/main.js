@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 			messages: {
 				name: {
-					required: "Пожалуйта введите свое имя",
+					required: "Пожалуйcта введите свое имя",
 					minlength: jQuery.validator.format('Введите минимум {0} символов')
 				},
 				phone: 'Пожалуйста введите свой номер телефона',

@@ -8,8 +8,13 @@ body {
 	position: relative;
 }
 
+@import "libs/reset";
+@import "libs/fonts";
+@import "libs/aos";
+
 @import "base/_variables";
 @import "base/_general";
+@import "blocks/_media";
 @import "blocks/_promo";
 @import "blocks/_header";
 @import "blocks/_advantages";
@@ -19,4 +24,4 @@ body {
 @import "blocks/_reviews";
 @import "blocks/_footer";
 @import "blocks/_modal";
-@import "blocks/_media";
+@import "libs/swiper.min";

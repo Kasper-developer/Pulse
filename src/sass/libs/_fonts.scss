@@ -1,0 +1,72 @@
+@font-face {
+	font-family: "Museo Sans Cyrl";
+	src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot");
+	src: local("../fonts/MuseoSans/MuseoSansCyrl-300"),
+		url("../fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"),
+		url("../fonts/MuseoSans/MuseoSansCyrl-300.ttf") format("truetype");
+	font-weight: 300;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Museo Sans Cyrl";
+	src: url("../fonts/MuseoSans/");
+	src: local("../fonts/MuseoSans/MuseoSansCyrl-500"), url("../fonts/MuseoSans/?#iefix") format("embedded-opentype"),
+		url("../fonts/MuseoSans/MuseoSansCyrl-500.woff") format("woff"),
+		url("../fonts/MuseoSans/MuseoSansCyrl-500.ttf") format("truetype");
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Museo Sans Cyrl";
+	src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot");
+	src: local("../fonts/MuseoSans/MuseoSansCyrl-700"),
+		url("../fonts/MuseoSans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"),
+		url("../fonts/MuseoSans/MuseoSansCyrl-700.ttf") format("truetype");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon/icomoon.eot?yd4i72");
+	src: url("../fonts/icomoon/icomoon.eot?yd4i72#iefix") format("embedded-opentype"),
+		url("../fonts/icomoon/icomoon.ttf?yd4i72") format("truetype"),
+		url("../fonts/icomoon/icomoon.woff?yd4i72") format("woff"),
+		url("../fonts/icomoon/icomoon.svg?yd4i72#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+	content: "\e900";
+}
+.icon-pinterest:before {
+	content: "\e901";
+}
+.icon-facebook:before {
+	content: "\ea90";
+}

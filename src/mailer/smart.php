@@ -11,21 +11,21 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'mail.kasper-developer.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'info@kasper-developer.ru';                 // Наш логин
-$mail->Password = 'kasper0707';                           // Наш пароль от ящика
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                    // TCP port to connect to
+$mail->Password = '4N7x2F5v';   
+$mail->SMTPAutoTLS = false;
+$mail->SMTPSecure = false;
+$mail->Port = 25;                        // Наш пароль от ящика
+/* $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 25;  */                                // TCP port to connect to
+/* $mail($mailRecipient, "TEST mail", $message, $headers, '-f '.$mailSender); */
 
 $mail->setFrom('info@kasper-developer.ru', 'Pulse');   // От кого письмо 
 $mail->addAddress('mirzohid.rahmatullaev@gmail.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Данные';

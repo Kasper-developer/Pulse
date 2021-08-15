@@ -8,10 +8,12 @@ const plumber = require('gulp-plumber'); // Подключаем gulp-plumber
 const notify = require('gulp-notify'); // Подключаем gulp-notify
 const rename = require("gulp-rename");
 const cleanCSS = require('gulp-clean-css');
+const tinify = require('gulp-tinify');
+const htmlmin = require('gulp-htmlmin');
 
 gulp.task('sass', function (callback) {
 	// Находим расположение sass файла
-	return gulp.src('./src/sass/style.+(scss|sass)')
+	return gulp.src('src/sass/style.+(scss|sass)')
 		.pipe(rename({
 			prefix: "",
 			suffix: ".min",
@@ -38,25 +40,59 @@ gulp.task('sass', function (callback) {
 		.pipe(sourcemaps.write())
 		.pipe(cleanCSS({ compatibility: 'ie8' }))
 		// Указание пункта назначения sass файла
-		.pipe(gulp.dest('./src/css/'));
+		.pipe(gulp.dest('dist/css'));
 	callback()
 });
 
 gulp.task('scripts', function (callback) {
-	return gulp.src('./src/js/main.js')
-		.pipe(gulp.dest('./src/js/'));
+	return gulp.src('src/js/**/*.js')
+		.pipe(gulp.dest('dist/js'));
+	callback();
+})
+
+gulp.task('fonts', function (callback) {
+	return gulp.src('src/fonts/**/*')
+		.pipe(gulp.dest('dist/fonts'));
+	callback();
+})
+
+gulp.task('icons', function (callback) {
+	return gulp.src('src/icons/**/*')
+		.pipe(gulp.dest('dist/icons'));
+	callback();
+})
+
+gulp.task('images', function (callback) {
+	return gulp.src('src/img/**/*')
+		.pipe(tinify('VP6GjHJtJT6mky62SVlm0DPbG03SRDQb'))
+		.pipe(gulp.dest('dist/img'));
+	callback();
+})
+
+gulp.task('html', function () {
+	return gulp.src('src/*.html')
+		.pipe(htmlmin({ collapseWhitespace: true }))
+		.pipe(gulp.dest('dist/'))
+})
+
+gulp.task('mailer', function (callback) {
+	return gulp.src('src/mailer/**/*')
+		.pipe(gulp.dest('dist/mailer'));
 	callback();
 })
 
 gulp.task('watch', function () {
 	// Слежение за HTML и CSS файлами и обновление браузера
-	watch(['./src/*.html', './src/css/**/*.css', './src/js/main.js'], gulp.parallel(browserSync.reload));
+	watch(['src/*.html', 'src/css/**/*.css', 'src/sass/**/*.scss', 'src/js/main.js'], gulp.parallel(browserSync.reload));
+
+	// Слежение за HTML файлами
+	watch('src/*.html').on('change', gulp.parallel('html'))
 
 	// Слежение за SASS файлами
-	watch('./src/sass/**/*.+(scss|sass)', gulp.parallel('sass'))
+	watch('src/sass/**/*.+(scss|sass|css)').on('change', gulp.parallel('sass'))
 
 	// Слежение за js файлами
-	watch('./src/js/**/*.js', gulp.parallel('scripts'))
+	watch('src/js/**/*.js').on('change', gulp.parallel('scripts'))
 
 });
 
@@ -64,10 +100,10 @@ gulp.task('watch', function () {
 gulp.task('server', function () {
 	browserSync.init({
 		server: {
-			baseDir: "./src/"
+			baseDir: "dist"
 		}
 	})
 });
 
 // Запускаем одновременно задачи server, watch, sass и js
-gulp.task('default', gulp.parallel('server', 'watch', 'sass', 'scripts'));
+gulp.task('default', gulp.parallel('server', 'watch', 'sass', 'scripts', 'fonts', 'icons', 'html', 'images', 'mailer'));
